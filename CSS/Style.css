@@ -1,0 +1,360 @@
+body{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header{
+    background-color: pink;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.name
+{
+   height: 50px;
+   width: 300px;
+   display: flex;
+   align-items: center;
+   
+}
+.nameLink{
+    display: flex;
+}
+.nameLink img{
+    height: 50px;
+    margin-top: 15px;
+}
+.name h1{
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: bold;
+}
+/* Barra de navegação */
+
+.navBar-container,
+ul{
+    display:flex;
+}
+
+.navBar-container,
+a{
+    font-size: 15px;
+    font-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navBar-container,
+li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navBar-container, a:hover{
+    transition: .5s;
+    color: red;
+    font-weight: bold;
+}
+
+/* Instagram */
+
+.instagram-link,
+img{
+    height: 40px;
+    margin-left: 50px;
+    
+}
+
+.instagram-link:hover{
+    .instagram-link,
+    img{
+       transition: .5s; 
+        height: 45px;
+    }
+}
+ /*Botões*/
+
+.btn-contateMe {
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
+    
+.btn-contateMe:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+    
+.btn-contateMe:active {
+    color: #000
+}
+    
+.btn-contateMe:active:after {
+    background: transparent;
+}
+    
+.btn-contateMe:hover:before {
+    opacity: 1;
+}
+    
+.btn-contateMe:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+    
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Apresentação */
+
+.section{
+    background-color: #C7C5B6;
+    width: 100%;
+    height: 605px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image-apresentacao{
+    height: 700px;
+    transition: 2s; 
+}
+.name-apresentacao{
+    top: 100px;
+    position: absolute;
+    right: 200px;
+    width: 450px;
+    font-size: 20px;
+    font-weight: bold;
+     
+}
+.name-apresentacao,p{
+    color: rgb(85, 84, 84);
+}
+.section1,p{
+    color: gray;
+}
+
+.footer-apresent{
+    background-color: #C7C5B6;   
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    opacity: .5;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.text-footer-apresentacao{
+
+    position: absolute;
+    bottom: 0px;
+    left: 270px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+}
+.text-footer-apresentacao, .p-footer{
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+}
+.text-footer-apresentacao, .h2-footer{
+    font-size: 28px;
+}
+
+
+/* O que fazemos? */
+
+.farma-Faz{
+   padding: 180px; 
+   display: flex;
+}
+.img-farma{
+    height: 200px;
+    padding: 20px;
+    box-shadow: 4px 4px 3px 5px  pink;
+    transition: 2s;
+}
+.skill-farma{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-farma li{
+    margin-bottom: 20px;
+    font-size: 11.5px;
+    color: gray;
+}
+
+
+/* Especialidades */
+
+.back-especialidade{
+    
+    height: 300px;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    
+}
+.back-especialidade img{  
+    height: 500px;
+    opacity: .6;
+    transition: 2s;
+}
+.text-especialidade{
+    width: 800px;
+    height: 270px;
+    position: relative;
+    left: 200px;
+    top: 15px;
+    padding: 10px;  
+}
+.text-especialidade ul{
+    display: flex;
+    flex-direction: column;
+}
+.text-especialidade p ,li{
+    color: black;
+    font-size: 11.5px; 
+}
+
+
+/*Sobre Farmaceutico*/
+
+.sobreFarma{
+    display: flex;
+    margin: 80px;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.sobreFarma p{
+    font-size: 11.5px;
+    margin-bottom: 5px;
+}
+.textFarma{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.sobreFarma img{
+    transition: 2s;
+    height: 350px;
+    box-shadow: 4px 4px 3px 5px  pink;
+}
+
+
+/*localização e Contato*/
+
+.local-contato{
+    display: flex;
+    padding: 60px;
+    background-color: pink;
+    
+}
+.localizacao{
+    margin-right: 250px;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    
+    height: 200px;
+}
+
+.contato span{
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.contato img{
+    height: 30px;
+    margin-left: 0px;
+
+}
+.contato a{
+    margin-left: 10px;
+}
+
+/*Copyright*/
+
+.copyright {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*-----Responsividade-----*/
+
